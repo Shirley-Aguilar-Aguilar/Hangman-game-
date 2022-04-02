@@ -12,12 +12,9 @@
 
    <section id="firstPage" style="text-align:center; margin:50px 0px;">
      <div>
-       
         <h1 >Ahorcado</h1>
         <button id="buttonStartGame" >INICIAR JUEGO</button>
-
      </div>
-        
 
      <div id="firstPage2" style="text-align:center">
         <input id="inputWord"  placeholder="Escriba una nueva palabra">
@@ -30,23 +27,23 @@
 
 
    <section id="gamePage" style="text-align:center; display: none ;" >
-       <canvas id="ahorcado"  height="800px" width="1200px">
-
-       </canvas>
-
-       <!--<div id="points" style="display:none;"  </div>>-->
-
-       
-       
+       <canvas id="ahorcado"  height="780px" width="500px">
+      //  </canvas>
+       <main class="containerMain">
+       <div id="messageWinLose" style="display: none">
+       </div>
+       <div>
+           <input class = "inputLetterUser" placeholder=" escribe el usuario"/>
+       </div>
+       <div class ="containerSpace"></div>
+       </main>
+       <button class ="buttonPLay" style="display: none" >Volver a jugar</button>
    </section>
 
-
-
-   <script type="text/javascript" src="ahorcado.js"></script>
-   <script  src="canvas.js"></script>
-
-    <label>_ _ _ _</label>
-   
+    <script type="text/javascript" src="ahorcado.js"></script>
+    <script  src="canvas.js"></script>
+    <script  src="logic.js"></script>
+    <!--<script  src="prueba.js"></script>-->
 
 </body>
 
