@@ -4,7 +4,7 @@ let pincel= pantalla.getContext("2d");          //2 dimenssiones ancho y largo
 
   
 //base de la horca
-pincel.fillStyle ="black";
+pincel.fillStyle ="white";
     pincel.beginPath();
     pincel.moveTo(100,600);
     pincel.lineTo(0,700);
@@ -14,7 +14,8 @@ pincel.fillStyle ="black";
 //dibujando horca y el ahorcado
 
 function drawPoste(){
-    pincel.fillStyle ="black";
+    pincel.strokeStyle ="white" ;
+    pincel.lineWidth = 4;
     pincel.beginPath();
     pincel.moveTo(100,600);
     pincel.lineTo(100,200);
@@ -22,7 +23,6 @@ function drawPoste(){
     pincel.stroke();
 }
 function drawPoste2(){
-    pincel.fillStyle ="black";
     pincel.beginPath();
     pincel.moveTo(100,200);
     pincel.lineTo(400,200);
@@ -30,7 +30,6 @@ function drawPoste2(){
     pincel.stroke();
 }
 function drawPoste3(){
-    pincel.fillStyle ="black";
     pincel.beginPath();
     pincel.moveTo(400,200);
     pincel.lineTo(400,300);
@@ -38,14 +37,13 @@ function drawPoste3(){
     pincel.stroke();
 }
 function drawHead(){
-    pincel.fillStyle ="black";
+    pincel.fillStyle ="white";
     pincel.beginPath();
     pincel.arc(400,350,50,0,2*3.14);
     pincel.closePath();
     pincel.stroke();
 }
 function drawBody(){
-    pincel.fillStyle ="black";
     pincel.beginPath();
     pincel.moveTo(400,400);
     pincel.lineTo(400,550);
@@ -53,7 +51,6 @@ function drawBody(){
     pincel.stroke();
 }
 function drawLeftLeg(){
-    pincel.fillStyle ="black";
     pincel.beginPath();
     pincel.moveTo(400,550);
     pincel.lineTo(330,600);
@@ -61,7 +58,6 @@ function drawLeftLeg(){
     pincel.stroke();
 }
 function drawRightLeg(){
-    pincel.fillStyle ="black";
     pincel.beginPath();
     pincel.moveTo(400,550);
     pincel.lineTo(470,600);
@@ -69,15 +65,13 @@ function drawRightLeg(){
     pincel.stroke();
 }
 function drawLeftArm(){
-    pincel.fillStyle ="black";
     pincel.beginPath();
     pincel.moveTo(400,450);
     pincel.lineTo(330,390);
     pincel.closePath();
     pincel.stroke();  
 }
-function drawRigthtArm(){
-    pincel.fillStyle ="black";
+function drawRigthArm(){
     pincel.beginPath();
     pincel.moveTo(400,450);
     pincel.lineTo(470,390);

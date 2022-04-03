@@ -8,17 +8,15 @@
 </head>
 
 <body>
-   
-
-   <section id="firstPage" style="text-align:center; margin:50px 0px;">
-     <div>
-        <h1 >Ahorcado</h1>
+   <section id="firstPage" >
+     <div class ="titleButton">
+        <h1  class ="title">Ahorcado</h1>
         <button id="buttonStartGame" >INICIAR JUEGO</button>
      </div>
 
      <div id="firstPage2" style="text-align:center">
-        <input id="inputWord"  placeholder="Escriba una nueva palabra">
-        <button>AGREGAR PALABRA</button>
+        <input class="inputWord"  placeholder="">
+        <button class = "buttonWord">AGREGAR PALABRA</button>
         <footer>
             <h5>Proyecto realizado por Shirley B. Aguilar</h5>
        </footer>
@@ -26,14 +24,14 @@
    </section>
 
 
-   <section id="gamePage" style="text-align:center; display: none ;" >
+   <section id="gamePage" style="display: none ;" >
        <canvas id="ahorcado"  height="780px" width="500px">
       //  </canvas>
        <main class="containerMain">
        <div id="messageWinLose" style="display: none">
        </div>
        <div>
-           <input class = "inputLetterUser" placeholder=" escribe el usuario"/>
+           <input class = "inputLetterUser" placeholder=""/>
        </div>
        <div class ="containerSpace"></div>
        </main>

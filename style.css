@@ -2,11 +2,79 @@
     border :0;
     margin: 0;
 }
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top right, black, dimgrey);
+    font-family: Verdana;
+}
+#firstPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 50%;
+    margin:5%;
+
+}
+#firstPage2 {
+    height: 40%;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5%;
+
+}
+.titleButton {
+    align-items: center;
+}
+.inputWord {
+    height: 50px;
+    width:250px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 14px;
+    text-align: center;
+}
+.title {
+    font-size: 90px;
+    font-family: "Arial Narrow";
+    color: white;
+}
+button {
+    text-decoration: none;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5);
+    border-radius: 30px;
+    z-index: 1;
+}
+#buttonStartGame {
+    font-size: 18px;
+    padding: 2%;
+    width:200px;
+    margin: 7%;
+}
+.buttonWord {
+    height: 50px;
+    width:200px;
+    margin-left: 1%;
+}
+
+footer {
+    color:white;
+    margin-top: 20%;
+}
 #gamePage {
 
 }
 canvas{
-    background-color: aqua;
+    background-color: transparent;
     float: left;
     margin:5% 10%;
 
@@ -27,6 +95,10 @@ canvas{
     font-size: 50px;
     margin-bottom: 10%;
     text-align: center;
+    margin-top: 100px;
+    background: transparent;
+    color:white;
+
 }
 .containerSpace {
     width:90%;
@@ -36,9 +108,33 @@ canvas{
     justify-content: center;
 }
 .letterSpace {
-    border-bottom: 4px solid black;
+    border-bottom: 5px solid white;
     font-size: 50px;
     width: 7%;
     display: flex;
     margin: 2% 2%;
+    background: transparent;
+}
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+#messageWinLose {
+ margin-top: 50px;
+
+}
+.containerMessage {
+  margin:1%;
+    width: 100%;
+}
+.containerMessage h1 {
+    color: aliceblue;
+    font-family: inherit;
+    padding: 2%;
+
+}
+.imageMessage {
+    height: 180px;
+
 }
