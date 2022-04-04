@@ -71,12 +71,13 @@ footer {
     margin-top: 20%;
 }
 #gamePage {
-
+    align-items: center;
+    justify-content: center;
 }
 canvas{
     background-color: transparent;
     float: left;
-    margin:5% 10%;
+    margin:2% 7%;
 
 }
 .containerMain {
@@ -93,7 +94,7 @@ canvas{
 }
 .inputLetterUser {
     font-size: 50px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     text-align: center;
     margin-top: 100px;
     background: transparent;
@@ -115,6 +116,11 @@ canvas{
     margin: 2% 2%;
     background: transparent;
 }
+.description {
+    color: aliceblue;
+    font-family: inherit;
+    padding: 2%;
+}
 .containerMain {
     display: flex;
     flex-direction: column;
@@ -125,16 +131,23 @@ canvas{
 
 }
 .containerMessage {
-  margin:1%;
+    margin:1%;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
-.containerMessage h1 {
+.containerMessage h1{
     color: aliceblue;
     font-family: inherit;
     padding: 2%;
-
 }
 .imageMessage {
     height: 180px;
+    border-radius: 30px;
 
 }
+.buttonPLay {
+    margin-top: 5%;
+    margin-left: 70%;
+}
+

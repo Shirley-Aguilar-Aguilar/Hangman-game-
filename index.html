@@ -17,6 +17,7 @@
      <div id="firstPage2" style="text-align:center">
         <input class="inputWord"  placeholder="">
         <button class = "buttonWord">AGREGAR PALABRA</button>
+        <p class ="description">Si desea jugar con una palabra al azar presione el botón "iniciar juego". Si desea jugar con una palabra diferente, agregue la palabra y presione el botón "agregar palabra" y luego "iniciar juego"</p>
         <footer>
             <h5>Proyecto realizado por Shirley B. Aguilar</h5>
        </footer>
@@ -25,8 +26,9 @@
 
 
    <section id="gamePage" style="display: none ;" >
+       <h1 class ="description">Escriba una letra para iniciar el juego, por cada error se dibujará el ahorcado. Exitos!</h1>
        <canvas id="ahorcado"  height="780px" width="500px">
-      //  </canvas>
+       </canvas>
        <main class="containerMain">
        <div id="messageWinLose" style="display: none">
        </div>
@@ -41,7 +43,6 @@
     <script type="text/javascript" src="ahorcado.js"></script>
     <script  src="canvas.js"></script>
     <script  src="logic.js"></script>
-    <!--<script  src="prueba.js"></script>-->
 
 </body>
 

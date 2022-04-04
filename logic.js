@@ -84,7 +84,6 @@ function verifyWinner(word,letter){
            let letterInput = a.attributes.placeholder.value;
             count = count +letterInput;
         })
-        console.log(count);
         if(count.length === word.length){
             if(pending > 0){
                 showWinMessage();
@@ -93,10 +92,9 @@ function verifyWinner(word,letter){
             }
         }
     })
-    console.log("verify winner")
 }
 function showWinMessage() {
-    console.log("you have won");  //todo: show this on UI
+     //todo: show this on UI
     image = "img/bien-hecho.gif" ;
     cleanAndPrintOnDiv(DIV1_ID_TO_PRINT_MESSAGE, MESSAGE_GAME_WIN, image);
     gameOver();
@@ -104,9 +102,7 @@ function showWinMessage() {
 
 //flujo en donde la la letra ingresada no existe en la palabra a adivinar
 function printDrownBody(error) {
-    console.log("exe printDrownBody");
     let pending = 9-error;
-    console.log('pending'+pending)
     if (pending >= 0) {
         if(error === 1){
             drawPoste();

@@ -1,7 +1,7 @@
 // principales selectores
 let btnStart = document.getElementById("buttonStartGame");
-let inputUSer = document.querySelector(".inputWord");
-let btnNewWord =document.querySelector(".buttonWord")
+let inputUser = document.querySelector(".inputWord");
+let btnNewWord =document.querySelector(".buttonWord");
 
 let separateLetters = "";
 
@@ -20,11 +20,12 @@ btnStart.addEventListener("click", jumpPage);
 function azarWords(){
     let words =["oracle","javascript","alura", "correr" ,"tren","Lima",];
     let azarwords = words[Math.floor(Math.random()*words.length)];
-    console.log("la palabra al azar escogida es: " + azarwords);
 
     //separar palabra en letra por letra
     separateLetters = azarwords.toUpperCase().split("");
-    console.log( "las letras de la palabra son : "+ separateLetters);
+    if(inputUser.value.length>0) {
+        separateLetters = inputUser.value.toUpperCase().split("");
+    }
     drawDashes(separateLetters);
     trackEvent(separateLetters);
 
